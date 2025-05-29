@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- AOS Animation Library CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DreamTrail Travels and Tours</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="dreamtrail3.png" alt="DreamTrail Travels & Tours Logo" class="site-logo">
+    </a>
+    <h1>Explore the World with DreamTrail Travels ✈️</h1>
+    <p id="welcome-message">Your adventure begins here...</p>
+  
+    <nav class="navbar">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  
+
+  <main>
+    <section>
+      <h2>Your Dream Vacation Starts Here</h2>
+      <p>We help you explore the world with tailored travel packages and unforgettable experiences.</p>
+    </section>
+
+    <section>
+        <h2>Why Choose Us</h2>
+        <div class="features" data-aos="fade-up">
+            <div class="feature-box" data-aos="fade-up">
+                <h3>Affordable Packages</h3>
+                <p>Travel without breaking the bank.</p>
+              </div>
+              
+              <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+                <h3>Expert Guides</h3>
+                <p>Experience each destination like a local.</p>
+              </div>
+              
+              <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>24/7 Support</h3>
+                <p>We're with you every step of the journey.</p>
+              </div>
+              
+      </section>
+      
+
+      <section>
+        <h2>Testimonials</h2>
+        <div class="Testimonials">
+      
+          <div class="testimonial-box" data-aos="fade-up">
+            DreamTrail gave me the best travel experience of my life! 
+            <br>I had so much fun!
+            <br><strong>- Sarah D.</strong>
+          </div>
+      
+          <div class="testimonial-box" data-aos="fade-up">
+            Highly recommended for stress-free tours. 
+            <br><strong>- Moyosola A.</strong>
+          </div>
+      
+          <div class="testimonial-box" data-aos="fade-up">
+            DreamTrail helped us plan the perfect honeymoon. 
+            <br>Everything was stress-free and magical! 
+            <br><strong>- Victor & Adesola O.</strong>
+          </div>
+      
+          <div class="testimonial-box" data-aos="fade-up">
+            From the airport pickup to the final goodbye, it was all 5-star service. 
+            <br><strong>- Awesome S.</strong>
+          </div>
+
+          <div class="testimonial-box" data-aos="fade-up">
+              DreamTrail made my Cape Town trip unforgettable. <br>Every moment felt like a dream.<br>The planning, the guides, the attention to detail… <br>I couldn’t have asked for more. Thank you, DreamTrail!
+              <br><strong>- Adedoyin G.</strong>
+            </div>
+            
+          </div>
+      
+        </div>
+      </section>
+
+
+
+        
+      
+  </main>
+
+  <footer class="site-footer">
+    <p class="brand-slogan">At DreamTrail, you get your money’s worth.</p>
+  
+    <div class="footer-contact">
+      <p><strong>Contact Us Directly:</strong></p>
+      <p>Email: dreamtrailtravels@gmail.com</p>
+      <p>Phone: +234 706 188 9224</p>
+      <p>Address: 315b Akin Ogunlewe Street, Victoria Island. Lagos, Nigeria</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/__ezekielll?igsh=MnBwdjlzMHZxZGMz" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2347061889224" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com/@__ezekielll?_t=ZM-8wgEH1RRDmw&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://x.com/__ezekielll?t=tttoRo3yGbi-fyrI4YXprA&s=09/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      
+  
+    <p>&copy; 2025 DreamTrail Travels & Tours. All rights reserved.</p>
+  </footer>
+  
+  <!-- AOS Animation Library JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<button id="backToTop" title="Back to top">↑</button>
+<script>
+  const backToTopButton = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopButton.style.display = "block";
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  };
+
+  backToTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+</body>
+</html>
+
+</body>
+</html>
