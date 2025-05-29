@@ -4,23 +4,33 @@
     <!-- AOS Animation Library CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DreamTrail Travels and Tours</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
   <header>
-    <img src="dreamtrail-logo2.png" alt="DreamTrail Travels & Tours Logo" class="site-logo">
+    <a href="index.html">
+      <img src="dreamtrail3.png" alt="DreamTrail Travels & Tours Logo" class="site-logo">
+    </a>
     <h1>Explore the World with DreamTrail Travels ✈️</h1>
-<p id="welcome-message">Your adventure begins here...</p>
-
+    <p id="welcome-message">Your adventure begins here...</p>
+  
     <nav class="navbar">
-      <a href="packages.html">Packages</a>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div> <!-- Hamburger icon -->
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Packages</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   </header>
+  
 
   <main>
     <section>
@@ -149,6 +159,17 @@
     });
   });
 </script>
+
+<script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+</body>
+</html>
 
 </body>
 </html>
